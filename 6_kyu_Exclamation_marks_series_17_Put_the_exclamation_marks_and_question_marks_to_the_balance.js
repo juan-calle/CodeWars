@@ -16,7 +16,8 @@
 // SOLUTION
 function balance(left, right) {
   let leftValue = (left.replace(/[^!]/g, '').length * 2) + (left.replace(/[^?]/g, '').length * 3);
-  let rightValue = (right.replace(/[^!]/g, '').length * 2) + (right.replace(/[^?]/g, '').length * 3);
+  let rightValue = (right.replace(/[^!]/g, '').length * 2) + (right.replace(/[^?]/g, '').length *
+  3);
 
   if (leftValue == rightValue) return 'Balance';
   return leftValue > rightValue ? 'Left' : 'Right';
